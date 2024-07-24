@@ -550,18 +550,15 @@ footer {
     }
 
     .portfolio-view {
+        display: block;
         padding-top: 16px;
         font-size: 15px;
         font-weight: 600;
     }
 
 
-    .portfolio-view {
-        display: block;
-    }
-
-    .project,
-    .view {
+    .view,
+    .project {
         padding-bottom: 10px;
         border-bottom: 2px solid rgb(120, 211, 179);
         font-family: Space Grotesk;
@@ -578,7 +575,7 @@ footer {
 
     }
 
-    h2 {
+    .portfolio h2 {
         margin-bottom: 25px;
         font-family: Space Grotesk;
         font-size: 72px;
@@ -662,21 +659,26 @@ footer {
         padding: 0 16px;
     }
 
-    header,
-    .nav {
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        margin: 0;
     }
 
     .header-name {
-        font-size: 25px;
-
+        margin: 0;
+        font-family: Space Grotesk;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.3333333432674408px;
+        text-align: left;
     }
 
     .header-icons {
         padding-right: 5px;
+        height: 20px;
     }
 
     .pic-image {
@@ -686,7 +688,7 @@ footer {
     }
 
     .text-container {
-        margin-top: 320px;
+        padding-top: 320px;
         text-align: center;
         align-items: center;
     }
@@ -732,24 +734,61 @@ footer {
         align-items: center;
         margin-bottom: 50px;
         font-size: 30px;
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid white;
     }
 
     .skill {
         text-align: center;
     }
 
+    .title {
+
+        font-family: Space Grotesk;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -1px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .description {
+        font-family: Space Grotesk;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: center;
+
+    }
+
     .rings-picture {
-        transform: translateX(70%);
+        transform: translateX(35%);
         left: unset;
+        bottom: -60px
     }
 
     .portfolio {
-        padding: 0 5px;
+        padding-top: 12px;
     }
 
-    h2 {
+    .portfolio h2 {
+        font-family: Space Grotesk;
         font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -1.1363636255264282px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .contact {
+        font-family: Space Grotesk;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 2.2857143878936768px;
+        text-align: left;
+        margin: 0;
     }
 
     .portfolio-body {
@@ -777,6 +816,24 @@ footer {
         margin-right: 30px;
     }
 
+    .project,
+    .view {
+        font-family: Space Grotesk;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 2.2857143878936768px;
+        text-align: left;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
     .footer-name {
         padding-left: 0;
         margin-bottom: 10px;
@@ -787,5 +844,10 @@ footer {
         padding-right: 0;
     }
 
-
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
 }
